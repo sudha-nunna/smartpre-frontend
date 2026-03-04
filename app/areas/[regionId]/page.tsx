@@ -9,7 +9,7 @@ export default function RegionSchoolsPage({ params }: { params: Promise<{ region
 
   useEffect(() => {
     if (regionId) {
-      fetch(`https://smartprep-backend-1.onrender.com/api/regional-schools/region/${regionId}`)
+      fetch(`https://smartprep-backend-2.onrender.com/api/regional-schools/region/${regionId}`)
         .then((res) => res.json())
         .then((data) => setSchools(data))
         .catch((err) => console.error("Error fetching schools:", err));

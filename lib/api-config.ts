@@ -3,7 +3,7 @@
  * Centralized API base URL configuration for the application
  */
 export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "https://smartprep-backend-1.onrender.com";
+  process.env.NEXT_PUBLIC_API_URL || "https://smartprep-backend-2.onrender.com";
 
 /**
  * Get the full API URL for a given endpoint

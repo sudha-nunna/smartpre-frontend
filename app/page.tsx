@@ -50,7 +50,7 @@ export default function LondonEntranceExamsHomePage() {
     const fetchAchievements = async () => {
       try {
         // Assuming an endpoint like /api/achievements returns the data
-        const res = await fetch(" https://smartprep-backend-6.onrender.com/api/stats", { cache: "no-store" })
+        const res = await fetch(" https://smartprep-backend-4.onrender.com/api/stats", { cache: "no-store" })
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`)
         }

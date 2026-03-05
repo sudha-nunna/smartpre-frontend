@@ -59,7 +59,7 @@ export default function SchoolsDirectoryPage() {
         search: searchTerm || "",
       }).toString()
 
-      const res = await fetch(` https://smartprep-backend-6.onrender.com/api/schools?${query}`)
+      const res = await fetch(` https://smartprep-backend-4.onrender.com/api/schools?${query}`)
       const data: ApiResponse = await res.json()
 
       if (reset) {

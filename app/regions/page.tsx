@@ -32,7 +32,7 @@ export default function RegionProfilePage() {
   useEffect(() => {
     const fetchSchools = async () => {
       try {
-        const res = await fetch(" https://smartprep-backend-6.onrender.com/api/regions") 
+        const res = await fetch(" https://smartprep-backend-4.onrender.com/api/regions") 
         const data = await res.json()
         setGrammarSchoolsData(data)
       } catch (error) {

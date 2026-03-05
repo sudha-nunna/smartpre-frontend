@@ -96,7 +96,7 @@ export default function ParentSignupPage() {
     try {
       const apiUrl =
         process.env.NEXT_PUBLIC_API_URL ||
-        " https://smartprep-backend-6.onrender.com";
+        "https://smartprep-backend-4.onrender.com";
       axios.defaults.baseURL = apiUrl;
       axios.defaults.withCredentials = true;
 

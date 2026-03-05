@@ -20,7 +20,7 @@ export default function ForgotPasswordPage() {
     setIsLoading(true)
     try {
       await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL || "https://smartprep-backend-2.onrender.com"}/api/auth/forgot-password`,
+        `${process.env.NEXT_PUBLIC_API_URL || "https://smartprep-backend-3.onrender.com"}/api/auth/forgot-password`,
         { email }
       )
       toast.success("Password reset link sent successfully!")

@@ -54,7 +54,7 @@ export default function ResourcesPage() {
 
   useEffect(() => {
     // Fetch subjects dynamically from backend
-    fetch("https://smartprep-backend-2.onrender.com/api/subjects") 
+    fetch("https://smartprep-backend-3.onrender.com/api/subjects") 
       .then((res) => res.json())
       .then((data) => {
         setSubjects(data)
@@ -69,7 +69,7 @@ export default function ResourcesPage() {
     useEffect(() => {
     const fetchResources = async () => {
       try {
-        const res = await fetch("https://smartprep-backend-2.onrender.com/api/resource-types"); // your backend API
+        const res = await fetch("https://smartprep-backend-3.onrender.com/api/resource-types"); // your backend API
         const data = await res.json();
         setResourceTypes(data);
       } catch (err) {

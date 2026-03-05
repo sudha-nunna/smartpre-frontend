@@ -84,7 +84,7 @@ export default function TeacherSignupPage() {
     try {
       const apiUrl =
         process.env.NEXT_PUBLIC_API_URL ||
-        "https://smartprep-backend-2.onrender.com";
+        "https://smartprep-backend-3.onrender.com";
       axios.defaults.baseURL = apiUrl;
       axios.defaults.withCredentials = true;
 

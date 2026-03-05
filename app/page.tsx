@@ -46,24 +46,24 @@ export default function LondonEntranceExamsHomePage() {
     return () => clearInterval(interval)
   }, [])
 
-  // useEffect(() => {
-  //   const fetchAchievements = async () => {
-  //     try {
-  //       // Assuming an endpoint like /api/achievements returns the data
-  //       const res = await fetch("https://smartprep-backend-2.onrender.com/api/stats", { cache: "no-store" })
-  //       if (!res.ok) {
-  //         throw new Error(`HTTP error! status: ${res.status}`)
-  //       }
-  //       const data = await res.json()
-  //       // setAchievementsData(data)
-  //       setAchievementsData(data)
-  //     } catch (error) {
-  //       console.error("Failed to fetch achievements:", error)
-  //       // Data will fallback to the initial state if the fetch fails.
-  //     }
-  //   }
-  //   fetchAchievements()
-  // }, [])
+  useEffect(() => {
+    const fetchAchievements = async () => {
+      try {
+        // Assuming an endpoint like /api/achievements returns the data
+        const res = await fetch(" https://smartprep-backend-6.onrender.com/api/stats", { cache: "no-store" })
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`)
+        }
+        const data = await res.json()
+        // setAchievementsData(data)
+        setAchievementsData(data)
+      } catch (error) {
+        console.error("Failed to fetch achievements:", error)
+        // Data will fallback to the initial state if the fetch fails.
+      }
+    }
+    fetchAchievements()
+  }, [])
 
   const programs = [
     {

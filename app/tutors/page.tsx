@@ -24,7 +24,7 @@ export default function TutorsPage() {
 
   //  Fetch Tutors
   useEffect(() => {
-    fetch("https://smartprep-backend-3.onrender.com/api/tutors")
+    fetch(" https://smartprep-backend-6.onrender.com/api/tutors")
       .then((res) => res.json())
       .then((data) => setTutors(data))
       .catch((err) => console.error("Error fetching tutors:", err))

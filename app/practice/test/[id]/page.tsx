@@ -51,7 +51,7 @@ export default function PracticeTestPage() {
     if (!testId) return
     const fetchTest = async () => {
       try {
-        const res = await fetch(`https://smartprep-backend-3.onrender.com/api/tests/${testId}`)
+        const res = await fetch(` https://smartprep-backend-6.onrender.com/api/tests/${testId}`)
         if (!res.ok) {
           console.error("Failed to fetch test:", await res.text())
           return

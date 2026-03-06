@@ -58,7 +58,7 @@ export default function LoginPage() {
 
     try {
       const res = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL || "https://smartprep-backend-4.onrender.com"}api/auth/login`,
+        `${process.env.NEXT_PUBLIC_API_URL || "https://smartprep-backend-4.onrender.com"}/api/auth/login`,
         {
           email: formData.email,
           password: formData.password,
